@@ -95,8 +95,9 @@ knowledge-sharing/
 ├── projects/                          ← 按项目独立记录
 │   ├── README.md                      ← 项目索引
 │   ├── bytedance-cot-compressed-evalset.md       ← 业务·evalset 构造：CoT 学科长尾+推理（核心讲述故事）
-│   ├── bytedance-vlm-agent能力建设.md             ← 业务·训练数据构造：vlm-agent 纲要（Agent 基准低→靶向增强）
-│   ├── bytedance-vlm-multivideo-capability-loop.md ← 业务·训练数据构造：vlm-agent 详版（已跑通 Benchmark 闭环，以视觉理解为杠杆）
+│   ├── bytedance-vlm-agent视觉证据数据引擎.md      ← 业务·训练数据构造：vlm-agent 主文档（Caption/时间戳/证据 CoT）
+│   ├── bytedance-vlm-agent能力建设.md             ← 业务·训练数据构造：vlm-agent 全链路纲要
+│   ├── bytedance-vlm-multivideo-capability-loop.md ← 业务·训练数据构造：vlm-agent 历史详版
 │   ├── bytedance-长视频复杂推理能力建设.md         ← 业务·训练数据构造：长视频复杂推理纲要（独立项目）
 │   ├── bytedance-数据构造pipeline.md             ← 开发：数据构造 Pipeline（半自动 DAG）
 │   ├── baidu-agent-migration.md        ← 百度物料迁移 Agent

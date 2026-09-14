@@ -1,4 +1,4 @@
-> 文档关系（2026-09-08）：本文是 **vlm-agent 项目的纲要**（能力链路全景 + 数据/质检/验证要点）。项目的**详细版**见 [`bytedance-vlm-multivideo-capability-loop.md`](./bytedance-vlm-multivideo-capability-loop.md)——它记录了一条已跑通的 Benchmark 驱动闭环：从 Agent 基准（ClawEval / WildClawBench）失分诊断出发，锁定「视觉理解 / 跨片段推理」为主要失分环节（即本文"视觉观察"环节的深化），靶向构造 L1/L2/L3 视觉数据并 SFT，真实结果内部 161 题覆盖子集 +2.8、ClawEval +0.5、WildClaw +2.3。换言之：**本文给全链路地图，详版给"视觉理解杠杆"这一条已验证的实操闭环**；本文其余环节（规划、工具调用、状态反馈、失败恢复）是后续待展开方向。
+> 文档关系（2026-09-14）：本文保留 **vlm-agent 的完整能力链路纲要**。当前项目主文档见 [`bytedance-vlm-agent视觉证据数据引擎.md`](./bytedance-vlm-agent视觉证据数据引擎.md)，它从 Agent Benchmark 失分出发，以时间戳 Caption 为共享证据底座，完整描述 Question/Answer、证据锚定 CoT、质量 Gate、SFT 和评测闭环。早期详细分析保留在 [`bytedance-vlm-multivideo-capability-loop.md`](./bytedance-vlm-multivideo-capability-loop.md)。
 
 项目定位：围绕需要视觉感知、环境理解和交互执行能力的Agent Benchmark，建设高质量训练与评测数据，提升多模态Agent在视觉观察、任务规划、动作决策、工具调用、状态反馈和失败恢复等环节的能力，最终提高Benchmark得分并增强对真实任务的泛化能力。
 “提升Benchmark得分”是明确结果，但数据建设不能只拟合题型或答案模式。更有价值的工作是拆解Benchmark考察的能力，定位模型失分环节并定向补齐数据，保证分数提升来自任务能力增强，而不是评测数据泄漏或格式投机。

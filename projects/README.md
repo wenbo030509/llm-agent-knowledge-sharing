@@ -2,7 +2,7 @@
 
 > 按项目独立记录，持续填充。每个项目一个文件，记录背景、技术解剖、知识连接、面试故事。
 >
-> 更新：2026-09-08（最新口径）：字节项目分**业务/开发**两类。业务=CoT evalset 构造 / vlm-agent（Agent 基准低→靶向数据增强，详版 `bytedance-vlm-multivideo-capability-loop.md`，以视觉理解为杠杆）/ 长视频复杂推理（独立项目）；开发=数据构造 Pipeline（已独立成文 `bytedance-数据构造pipeline.md`）、数据质检 Pipeline（待成文）。（两份早期论证稿 `vlm-sft-refactor` / `vlm-sft-addition` 内容已并入详版，原稿已删除。）
+> 更新：2026-09-14（最新口径）：字节项目分**业务/开发**两类。业务=CoT evalset 构造 / VLM-Agent 视觉证据数据引擎 / 长视频复杂推理；开发=数据构造 Pipeline、数据质检 Pipeline。VLM-Agent 当前主文档为 `bytedance-vlm-agent视觉证据数据引擎.md`，以时间戳 Caption 为共享证据底座，串联任务生成、证据锚定 CoT、质量 Gate、SFT 与分层评测；原 `bytedance-vlm-multivideo-capability-loop.md` 保留为历史详版。
 
 ---
 
@@ -13,7 +13,7 @@
 | 项目 | 类型 | 文件 | 状态 | 时间 |
 |------|------|------|------|------|
 | CoT 基础学科长尾 + 推理 | **evalset 构造** | `bytedance-cot-compressed-evalset.md` | 🟢 已交付，持续深挖 | 2026-06 ~ 07 |
-| vlm-agent（Agent 基准低 → 靶向数据增强能力） | 训练数据构造 | `bytedance-vlm-agent能力建设.md`（纲要）+ `bytedance-vlm-multivideo-capability-loop.md`（详版·已跑通 Benchmark 闭环，以视觉理解为杠杆） | 🟢 进行中（首轮闭环已跑通） | 2026-08 ~ |
+| VLM-Agent 视觉证据数据引擎（Agent 失分 → Caption/时间戳/证据 CoT → SFT） | 训练数据构造 | `bytedance-vlm-agent视觉证据数据引擎.md`（主文档）+ `bytedance-vlm-agent能力建设.md`（全链路纲要）+ `bytedance-vlm-multivideo-capability-loop.md`（历史详版） | 🟢 进行中（首轮闭环已跑通，方法已重构） | 2026-08 ~ |
 | 长视频复杂推理（含多视频=拼接后多跳） | 训练数据构造 | `bytedance-长视频复杂推理能力建设.md`（纲要/能力地图） | 🟢 进行中 | 2026-08 ~ |
 
 ### 字节 · 开发项目（Pipeline）

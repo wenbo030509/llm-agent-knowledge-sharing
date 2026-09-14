@@ -2,6 +2,8 @@
 
 > Benchmark-driven Targeted Data Loop and SFT for VLM-Agent Capability
 >
+> **文档状态（2026-09-14）**：历史详版，保留早期分析、指标口径和面试素材。当前规范化主文档已迁移至 [`bytedance-vlm-agent视觉证据数据引擎.md`](./bytedance-vlm-agent视觉证据数据引擎.md)，新文档明确了真实交付并非简单 VQA，而是由时间戳 Caption、视觉证据、Question/Answer、证据锚定 CoT 和能力标签组成的复合数据，并用 ReWatch-R1 方法重构了完整 Pipeline。后续优先更新新文档。
+>
 > 项目周期：2026.08 - 至今（进行中）
 >
 > 状态：🟢 进行中（数据闭环已跑通首轮，覆盖率扩展与自动化管线推进中）
