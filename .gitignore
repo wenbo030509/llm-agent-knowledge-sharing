@@ -6,3 +6,4 @@ src/img_ocr
 assets/
 patch-tokenizer-viz.html
 vlm-agent-sft-loop.html
+*.pdf
